@@ -1,0 +1,32 @@
+body{
+    background-color: yellow;
+    }
+.card{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+}
+.card-header{
+    font-weight: 999;
+    font-family: 'Press Start 2P', cursive;
+    border:1px solid black;
+}
+.card-title{
+    font-weight: 699;
+    font-family: 'Press Start 2P', cursive;
+}
+.btn{
+    font-family: Chelsea Market, Helvetica, Arial, sans-serif;
+    display: block;
+    text-align: center;
+    margin:30px auto 40px auto;
+    background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 1px solid #1f2f47;
+    font-size:20px;
+    color: #ffffff;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+}

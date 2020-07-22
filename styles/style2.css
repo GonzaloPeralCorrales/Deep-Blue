@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/okeanGo.jpg);
+    background-size:cover;
+}
+#myCanvas { /*background-image:url("https://media.giphy.com/media/3o7TKHijxCRJS3KOHe/giphy.gif")*/
+background-image:url("https://media.giphy.com/media/YU1NGo5mVYLFC/giphy.gif");
+background-size: cover;
+
+/*background-image:url(../img/red-ocean.jpg);*/
+}
+.contadores{
+    width:100%;
+    color:white;
+    margin: 25px 0 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    flex-direction:column;
+   
+}
+.score-result{
+    font-weight:bolder;
+    font-size:2rem;
+    
+}
+
+.final-result{
+    border:
+
+}
+
+
+

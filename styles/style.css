@@ -1,0 +1,126 @@
+body{
+background-image:url(../img/StarOcean.png);
+/*background-size:cover;*/
+}
+.container{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+@media (max-width: 764px) {
+     #title-box h1{
+        /*font-weight: 399;*/
+        font-family: 'Press Start 2P', cursive;
+        display: flex;
+        font-size:27px;
+        padding: 25px 0 15px 15px;
+        justify-content: center;
+       
+    }
+    #instructions-box h2{
+        margin-right: 4.9px;
+        font-size:22px;
+    }
+    #instructions-box p{
+      display:flex;
+      align-self: stretch;
+      border:1px solid black;
+    }
+    #name-input{
+    border:1px solid black;
+    }
+}    
+h1{
+    font-weight: 699;
+    color:red;
+    font-family: 'Press Start 2P', cursive;
+}
+#instructions-box{
+    margin-top:35px;
+}
+#instructions-box h2{
+font-family: 'Press Start 2P', cursive;
+}    
+#instructions-box p{
+    font-family: 'Press Start 2P', cursive;
+}
+.input-container input{
+    margin-top:29px;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+label{
+    margin-top:22px;
+    display: block;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#start-btn{
+    font-family: Chelsea Market, Helvetica, Arial, sans-serif;
+    display: block;
+    text-align: center;
+    margin:30px auto 40px auto;
+    background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    background-color: #2e466e;
+    border-radius: 17px;
+    border: 1px solid #1f2f47;
+    font-size:20px;
+    color: #ffffff;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+}
+
+/*.animacion {
+    position: absolute;
+
+animation-name: parpadeo;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+-webkit-animation-name:parpadeo;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+
+@-moz-keyframes parpadeo{  
+0% { opacity: 1.0; }
+50% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+0% { opacity: 1.0; }
+50% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+0% { opacity: 1.0; }
+50% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}*/
+
+.animacion{
+    color:#fff;
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+
+}
+
+
+
+
