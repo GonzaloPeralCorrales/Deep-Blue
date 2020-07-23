@@ -1,9 +1,9 @@
 
-var audioStart = new Audio()
+/*var audioStart = new Audio()
 audioStart.src= 'epic.wav';
-audioStart.volume = 0.05
-audioStart.play()
-console.log('hi')
+audioStart.volume = 0.04
+audioStart.play()*/
+
 
 let canvas = document.getElementById('myCanvas')
 canvas.style.border = '3px solid black'
@@ -99,7 +99,7 @@ function collision(bomb){
             // clear the image after a time
             setTimeout(function(){
                //clear the arc
-               ctx.clearRect(bomb.x,bomb.y)
+            ctx.clearRect(bomb.x,bomb.y)
             }, 3000);
             
             ship[i].y = 700;
@@ -144,7 +144,7 @@ contadores.removeChild(counter)
 div.innerHTML= `<div class="final-result"> 
  <h1 class="score-result"> ${player} Score:${score}</h1> 
  <!--<button type="button" id="startBtn" onclick="initialize()">-->
- <a href="landingPage.html" class="btn-restart">RESTART</a></button>   
+ <a href="index.html" class="btn-restart">RESTART</a></button>   
     </div>`;
 body.appendChild(div)
 }
@@ -154,8 +154,7 @@ function moveShooter(e) {
         case 37:
             if(cannonX > 0){
                 cannonX -= 15 
-                
-            } 
+                } 
             break
         case 39:
         if(cannonX < canvas.width-bombImg.width){
