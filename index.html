@@ -9,28 +9,6 @@
   
 </head>
 <body>
-  <!--<span>Score: </span>
-  <div class ="container">
-    <audio autoplay>
-      <source src="sounds/epic.wav"></source>
-    </audio>
-    <iframe src="sounds/epic.wav" allow="autoplay">-->
-      <div class="container">
-    <div class="contadores">
-      <span id="counterPlayer">Counter:</span> 
-      <span id="counterShip">Sink Ships:</span>
-    </div>
-    <canvas id="myCanvas" width="800" height="600">
-        Tu navegador no admite el elemento &lt;canvas&gt;.
-      </canvas>
-    </div>
-  </div>
-      <!--<button type="button" id="startBtn" onclick="initialize()">START</button>-->
-      <!--<audio>
-        <source src="audio.opus" />
-        <source src="audio.ogg" />
-        <source src="audio.mp3" />
-      </audio>-->
     
     <div class="container">
         <div id="title-box">
@@ -53,11 +31,11 @@
     <script>
     var startBtn= document.getElementById('start-btn')
     startBtn.addEventListener('click',function(){
-    var inputPlayer= document.getElementById("name-input");
-    console.log(inputPlayer.value)
-    localStorage.setItem("inputPlayer", inputPlayer.value);
-    //Redirección a otra pagina
-    window.location.href='game.html'
+        var inputPlayer= document.getElementById("name-input");
+        console.log(inputPlayer.value)
+        localStorage.setItem("inputPlayer", inputPlayer.value);
+        //Redirección a otra pagina
+        window.location.href='game.html'
     })
     </script>
     
