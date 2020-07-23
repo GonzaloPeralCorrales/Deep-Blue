@@ -1,5 +1,9 @@
 
-
+var audioStart = new Audio()
+audioStart.src= 'epic.wav';
+audioStart.volume = 0.05
+audioStart.play()
+console.log('hi')
 
 let canvas = document.getElementById('myCanvas')
 canvas.style.border = '3px solid black'
@@ -10,11 +14,15 @@ var audio = new Audio()
 audio.src= 'sounds/splash1.wav';
 audio.autoplay = false;
 
-var audioStart = new Audio()
-audioStart.src= 'sounds/epic.wav';
+//var audioStart = new Audio()
+//audioStart.src= 'sounds/epic.wav';
 
 
 let intervalId = 0;
+
+var counterShip = document.getElementById('counterShip');
+var counter = document.getElementById('counterPlayer');
+var contadores = document.querySelector('.contadores')
 
 let bombImg = new Image();
 bombImg.src = 'img/cannonBall_NW.png'
@@ -79,7 +87,6 @@ function collision(bomb){
            // ctx.clear(ship[i].y)
            // ctx.clear(ship[i].y)
             score++;
-            var counter = document.getElementById('counter');
             counter.innerHTML= "counter : " + score; 
             audio.play();
             console.log('Increasing score')
@@ -105,25 +112,19 @@ function collision(bomb){
 let lifeCanon = 5;
 let countShipDown=0;
 
-
-
-
-
 function moveShip(myShip){
-myShip.y += 2;
+myShip.y += 4;
 
 if( myShip.y > canvas.height && myShip.y < 610){
     console.log('Reducing life')
     lifeCanon -= 1;
     countShipDown++;
-    var counterShip = document.getElementById('counterShip');
     counterShip.innerHTML= 'CounterShip:' + countShipDown;
 
     myShip.y = 620
 }
 if(lifeCanon <= 0){
-    
-   clearInterval(intervalId)
+    clearInterval(intervalId)
     newPage()
 }
 //audio.play();
@@ -133,12 +134,17 @@ function newPage(){
    let body = document.querySelector('.container')
    var player = localStorage.getItem('inputPlayer');
     ctx.clearRect(0,0,canvas.width, canvas.height)
+    //counterShip.style.display = 'none';
+    //counter.style.display = 'none';
+    contadores.removeChild(counterShip)
+contadores.removeChild(counter)
+
  body.removeChild(canvas)
-    var div= document.createElement('div');
-    div.innerHTML= `<div class="final-result"> 
- <h1 class="score-result"> ${player} score : ${score}</h1> 
- <button type="button" id="startBtn" onclick="initialize()">
- <a href="landingPage.html">RESTART</a></button>   
+ var div= document.createElement('div');
+div.innerHTML= `<div class="final-result"> 
+ <h1 class="score-result"> ${player} Score:${score}</h1> 
+ <!--<button type="button" id="startBtn" onclick="initialize()">-->
+ <a href="landingPage.html" class="btn-restart">RESTART</a></button>   
     </div>`;
 body.appendChild(div)
 }
@@ -173,7 +179,7 @@ function shoot(){
 
 }
 window.addEventListener('load', () => {
-    audioStart.play()
+    //audioStart.play()
 
     intervalId = setInterval(() => {
         requestAnimationFrame(draw)

@@ -61,6 +61,7 @@ label{
 #start-btn{
     font-family: Chelsea Market, Helvetica, Arial, sans-serif;
     display: block;
+    cursor: pointer;
     text-align: center;
     margin:30px auto 40px auto;
     background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
