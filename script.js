@@ -87,7 +87,7 @@ function collision(bomb){
            // ctx.clear(ship[i].y)
            // ctx.clear(ship[i].y)
             score++;
-            counter.innerHTML= "counter : " + score; 
+            counter.innerHTML= "Counter:" + score; 
             audio.play();
             console.log('Increasing score')
             // draw the image
